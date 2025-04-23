@@ -534,7 +534,7 @@ describe('WebSocketServer', () => {
         });
       });
     });
-  });
+ 
     it('fails if the Sec-WebSocket-Key header is invalid (1/2)', (done) => {
       const wss = new WebSocket.Server({ port: 0 }, () => {
         const req = http.get({
